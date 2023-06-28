@@ -11,14 +11,14 @@
 
 <body>
     <script src="index.js"></script>
-    <form name="HelloWorld">
+    <form name="HelloWorld" method="POST" data-netlify="true" onSubmit="submit">
         <div class="test class">
             <label for="name">Username</label>
-            <input type="text" class="form-control" id="name">
+            <input type="text" class="form-control" id="name" name="name">
         </div>
         <div class="test class">
             <label for="password">Password</label>
-            <input type="text" class="form-control" id="password">
+            <input type="email" class="form-control" id="password" name="email">
         </div>
         <button type="submit" class="form-test">Send</button>
     </form>
