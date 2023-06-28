@@ -11,12 +11,16 @@
 
 <body>
     <script src="index.js"></script>
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <input type="submit" value="Submit">
+    <form name="HelloWorld">
+        <div class="test class">
+            <label for="name">Username</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="test class">
+            <label for="password">Password</label>
+            <input type="text" class="form-control" id="password">
+        </div>
+        <button type="submit" class="form-test">Send</button>
     </form>
 
 </body>
