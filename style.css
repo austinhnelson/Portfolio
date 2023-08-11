@@ -91,12 +91,12 @@ body {
 
 .d {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 10vw;
+    font-size: 8vw;
 }
 
 .blinking_underscore {
     animation: blinker 1s linear infinite;
-    font-size: 10vw;
+    font-size: 8vw;
 }
 
 @keyframes blinker {
