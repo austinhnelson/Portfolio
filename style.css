@@ -88,3 +88,19 @@ body {
         transform: rotateY(720deg) rotateX(360deg);
     }
 }
+
+.d {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10vw;
+}
+
+.blinking_underscore {
+    animation: blinker 1s linear infinite;
+    font-size: 10vw;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
