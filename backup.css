@@ -1,0 +1,146 @@
+body {
+    background-color: #203030;
+    overflow-x: hidden;
+}
+
+.wrap {
+    perspective: 8500px;
+    perspective-origin: 50% 100px;
+}
+
+.cube-wrap {
+    animation: fall 5s infinite linear;
+}
+
+.cube {
+    animation: spin 5s infinite linear;
+    height: 300px;
+    margin: 100px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    width: 300px;
+}
+
+.side {
+    background-color: #AA2020;
+    height: 300px;
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+}
+
+.side:first-child {
+    transform:
+        translateZ(-100px) rotateY(180deg);
+    background-color: #552020;
+}
+
+.side:last-child {
+    transform: rotateX(90deg) translateY(200px);
+    transform-origin: bottom center;
+}
+
+.side:nth-child(2),
+.side:nth-child(3) {
+    background-color: #000;
+    transform:
+        rotateY(90deg) translateX(-50px) translateZ(-150px);
+    transform-origin: center;
+}
+
+.side:nth-child(3) {
+    background-color: #BB1010;
+    transform:
+        rotateY(90deg) translateX(-50px) translateZ(150px);
+}
+
+.side:nth-child(4) {
+    background-color: #CC3030;
+    transform:
+        rotateX(90deg) translateY(-100px);
+    transform-origin: top center;
+}
+
+.side:nth-child(5) {
+    background-color: #AA5050;
+    transform: translateZ(200px);
+}
+
+
+@keyframes fall {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotateY(720deg) rotateX(360deg);
+    }
+}
+
+.d {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8vw;
+}
+
+.blinking_underscore {
+    animation: blinker 1s linear infinite;
+    font-size: 8vw;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(219, 11, 11);
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 6vw;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(233, 14, 14);
+    }
+}
