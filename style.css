@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #203030;
     overflow-x: hidden;
 }
 
@@ -56,39 +56,49 @@ body {
 .side:first-child {
     transform:
         translateZ(-100px) rotateY(180deg);
-    background-color: #109ae4;
+    background-color: #d20ce4;
+    opacity: 75%;
 }
 
 .side:last-child {
     transform: rotateX(90deg) translateY(200px);
     transform-origin: bottom center;
-    background-color: #109ae4;
+    background-color: #dc0fd5;
+    opacity: 75%;
 }
 
 .side:nth-child(2),
 .side:nth-child(3) {
-    background-color: #109ae4;
+    background-color: #dc0fd5;
     transform:
         rotateY(90deg) translateX(-50px) translateZ(-150px);
     transform-origin: center;
+    opacity: 75%;
+
 }
 
 .side:nth-child(3) {
-    background-color: #109ae4;
+    background-color: #dc0fd5;
     transform:
         rotateY(90deg) translateX(-50px) translateZ(150px);
+    opacity: 75%;
+
 }
 
 .side:nth-child(4) {
-    background-color: #109ae4;
+    background-color: #dc0fd5;
     transform:
         rotateX(90deg) translateY(-100px);
     transform-origin: top center;
+    opacity: 75%;
+
 }
 
 .side:nth-child(5) {
-    background-color: #109ae4;
+    background-color: #dc0fd5;
     transform: translateZ(200px);
+    opacity: 75%;
+
 }
 
 
