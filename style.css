@@ -1,8 +1,6 @@
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
     height: 75vh;
     background-color: #121111;
     overflow: hidden;
@@ -73,6 +71,22 @@ body {
     font-family: 'JetBrains Mono', monospace;
     font-family: 'Nanum Gothic Coding', monospace;
     margin-top: 200px;
+    font-size: calc(10px + 5vw);
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 0.15em #100102;
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.009em);
+    animation: shake 7.5s infinite;
+}
+
+.title h5 {
+    position: relative;
+    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Nanum Gothic Coding', monospace;
+    margin-top: 350px;
     font-size: calc(10px + 5vw);
     font-weight: 700;
     color: #fff;
