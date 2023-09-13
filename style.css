@@ -1,138 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
 body {
-    height: 75vh;
-    background-color: #121111;
+    background-color: #292936;
+    color: #ffff;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
-.title h1 {
-    position: relative;
-    text-align: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 4vw;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.02em;
-    text-shadow: 0 0 0.15em #100102;
-    user-select: none;
-    white-space: nowrap;
-    filter: blur(0.009em);
-    animation: shake 7.5s infinite;
+.topnav {
+    display: flex;
+    padding: 2vh 10vh;
+    font-size: 3vh;
+    font-weight: bolder;
+    justify-content: flex-end;
+    gap: 8em;
 }
 
-.title h2 {
-    position: relative;
-    text-align: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 4vw;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.02em;
-    text-shadow: 0 0 0.15em #100102;
-    user-select: none;
-    white-space: nowrap;
-    filter: blur(0.009em);
-    animation: shake 7.5s infinite;
+.Signature {
+    font-family: 'Cedarville Cursive', cursive;
+    padding: 0vh;
+    padding-right: 10em;
+    font-size: 5vh;
 }
 
-.title h3 {
-    position: relative;
-    font-family: 'JetBrains Mono', monospace;
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 4vw;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.02em;
-    text-shadow: 0 0 0.15em #100102;
-    user-select: none;
-    white-space: nowrap;
-    filter: blur(0.009em);
-    animation: shake 7.5s infinite;
-}
-
-.title h4 {
-    position: relative;
-    font-family: 'JetBrains Mono', monospace;
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 4vw;
-    font-weight: 700;
-    margin-top: 100px;
-    color: #fff;
-    letter-spacing: 0.02em;
-    text-shadow: 0 0 0.15em #100102;
-    user-select: none;
-    white-space: nowrap;
-    filter: blur(0.009em);
-    animation: shake 7.5s infinite;
-}
-
-.title h5 {
-    position: relative;
-    font-family: 'JetBrains Mono', monospace;
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 4vw;
-    font-weight: 700;
-    margin-top: 100px;
-    color: #fff;
-    letter-spacing: 0.02em;
-    text-shadow: 0 0 0.15em #100102;
-    user-select: none;
-    white-space: nowrap;
-    filter: blur(0.009em);
-    animation: shake 7.5s infinite;
-}
-
-@keyframes shake {
-
-    5%,
-    15%,
-    25%,
-    35%,
-    55%,
-    65%,
-    75%,
-    95% {
-        filter: blur(0.018em);
-        transform: translateY(0.018em) rotate(0deg);
-    }
-
-    10%,
-    30%,
-    40%,
-    50%,
-    70%,
-    80%,
-    90% {
-        filter: blur(0.01em);
-        transform: translateY(-0.018em) rotate(0deg);
-    }
-
-    20%,
-    60% {
-        filter: blur(0.03em);
-        transform: translate(-0.018em, 0.018em) rotate(0deg);
-    }
-
-    45%,
-    85% {
-        filter: blur(0.03em);
-        transform: translate(0.018em, -0.018em) rotate(0deg);
-    }
-
-    100% {
-        filter: blur(0.007em);
-        transform: translate(0) rotate(-0.5deg);
-    }
-}
-
-@keyframes crack1 {
-
-    0%,
-    95% {
-        transform: translate(-50%, -50%);
-    }
-
-    100% {
-        transform: translate(-51%, -48%);
-    }
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 50vh;
 }
