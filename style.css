@@ -13,28 +13,81 @@ body {
 
 .topnav {
     display: flex;
-    padding: 2vh 10vh;
+    padding: 5vh 10vh;
     font-size: 3vh;
     font-weight: bolder;
-    justify-content: flex-end;
-    gap: 8em;
+    justify-content: center;
+    gap: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
 }
 
 .Signature {
     font-family: 'Cedarville Cursive', cursive;
     padding: 0vh;
-    padding-right: 10em;
+    padding-right: 12em;
     font-size: 5vh;
 }
 
-a:visited {
-    text-decoration: none;
-    color: orange;
+.wrapper {
+    height: 50vh;
+    display: grid;
+    place-items: start;
+    padding-left: 10em;
 }
 
-section {
+.typing-demo {
+    width: 39ch;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+.fade-in-text-1 {
+    width: 39ch;
+    font-size: 2em;
+    animation: fadeIn 1s 3.2s linear 1 normal both;
+}
+
+.fade-in-text-2 {
+    width: 75ch;
+    animation: fadeIn 1s 4.2s linear 1 normal both;
+}
+
+.section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 50vh;
+    min-height: 100vh;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
 }
