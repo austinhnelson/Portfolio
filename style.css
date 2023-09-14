@@ -3,21 +3,91 @@
 
 body {
     background-color: #292936;
-    color: #ffff;
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 200;
-    padding: 0;
-    margin: 0;
     scroll-behavior: smooth;
+    margin: 0;
 }
 
-.topnav {
+.container {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 200;
+    color: #ffff;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 90vh 100vh 100vh 100vh;
+
+    padding: 10vh;
+    overflow-x: hidden;
+
+}
+
+.container div {
+    padding: 10px;
+    width: 100%;
+}
+
+.header {
+    grid-column: span 2;
     display: flex;
-    padding: 5vh 10vh;
+    text-align: right;
     font-size: 3vh;
     font-weight: bolder;
-    justify-content: center;
-    gap: 3em;
+}
+
+.Signature {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 5vh;
+    margin-left: -125vh;
+}
+
+.toolbar a {
+    margin-right: 50px;
+}
+
+.intro-text {
+    margin-top: 10vh;
+}
+
+.fade-in-text-1 {
+    width: 39ch;
+    animation: fadeIn 1s 0s linear 1 normal both;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+.fade-in-text-2 {
+    width: 39ch;
+    font-size: 2em;
+    line-height: 1.6;
+    animation: fadeIn 1s 0.8s linear 1 normal both;
+}
+
+.fade-in-text-3 {
+    width: 75ch;
+    line-height: 200%;
+    animation: fadeIn 1s 1.8s linear 1 normal both;
+}
+
+.intro-picture {
+    display: flex;
+    align-items: center;
+    margin-left: 10vh;
+    margin-top: -4vh;
+}
+
+.intro-picture img {
+    border-radius: 50%;
+    border: 5px solid #4ba36b;
+}
+
+.experience,
+.about-me,
+.connect {
+    grid-column: span 2;
+    /* Span across both columns */
 }
 
 a {
@@ -29,47 +99,6 @@ a:hover {
     color: white;
 }
 
-.Signature {
-    font-family: 'Cedarville Cursive', cursive;
-    padding: 0vh;
-    padding-right: 12em;
-    font-size: 5vh;
-}
-
-.wrapper {
-    height: 50vh;
-    display: grid;
-    place-items: start;
-    padding-left: 10em;
-}
-
-.typing-demo {
-    width: 39ch;
-    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: monospace;
-    font-size: 1.5em;
-}
-
-.fade-in-text-1 {
-    width: 39ch;
-    font-size: 2em;
-    animation: fadeIn 1s 3.2s linear 1 normal both;
-}
-
-.fade-in-text-2 {
-    width: 75ch;
-    animation: fadeIn 1s 4.2s linear 1 normal both;
-}
-
-.section {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh;
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -77,17 +106,5 @@ a:hover {
 
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
     }
 }
