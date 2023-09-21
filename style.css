@@ -86,11 +86,34 @@ body {
     border: 5px solid #cbd0d4;
 }
 
-.experience,
-.about-me,
-.connect {
+.experience {
+    font-size: 5vh;
     grid-column: span 2;
-    /* Span across both columns */
+}
+
+.about-me {
+    font-size: 5vh;
+    grid-column: span 2;
+}
+
+.connect {
+    /* grid-column: span 2; */
+}
+
+.connect-title {
+    font-size: 5vh;
+}
+
+.connect-text-1 {
+    margin-top: 10vh;
+}
+
+.connect-text-2 {
+    margin-top: 20vh;
+}
+
+.icons {
+    margin-top: 20vh;
 }
 
 a {
