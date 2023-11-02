@@ -241,6 +241,15 @@
         padding: 5px 10px;
     }
 
+    footer {
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        color: white;
+    }
+
     /* Add media queries for responsiveness */
     @media (max-width: 768px) {
         .container {
