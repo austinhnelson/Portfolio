@@ -26,11 +26,13 @@
         height: 100vh;
     }
 
-    /* Style the left column */
     .left-column {
-        flex: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px; /* Adjust the width as needed */
         padding: 20px;
-    }
+    } 
 
     header {
         position: relative;
@@ -42,7 +44,7 @@
     }
 
     header .content {
-        background-color: #303336; 
+        /* background-color: #303336;  */
         padding: 3rem;
         border-radius: 30px;
         border: 2px solid transparent;
@@ -136,8 +138,8 @@
 
     .socials a:hover {
         color: white;
-        background-color: #5c9ebf;
-        border-color: #5c9ebf;
+        background-color: #315691;
+        border-color: #315691;
         border-radius: 30%;
         transition: all 0.5s ease;
     }
@@ -146,6 +148,8 @@
     .right-column {
         flex: 2;
         padding: 20px;
+        margin-left: 500px; /* Add a margin equal to the width of the left column + some spacing */
+
     }
 
     section .header {
@@ -156,7 +160,7 @@
     }
     
     .features .card {
-        background-color: #303336;
+        /* background-color: #303336; */
         padding: 1rem;
         border: 2px solid transparent;
         border-radius: 30px;
@@ -177,12 +181,32 @@
         color: white;
         border-radius: 10px;
     }
+
+    resume-text {
+        color: white;
+        margin-bottom: 1rem;
+        padding: 2px 9px;
+        font-size: 1.25rem;
+        font-weight: 600;
+        border-radius: 30px;
+    }
+
+    .right-body {
+        padding: 1rem;
+    }
     
     .features .card h4 {
         margin-bottom: 0.5rem;
         color: white;
         font-size: 1.2rem;
         font-weight: 600;
+    }
+
+    .features .card h2 {
+        margin-bottom: 0.5rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: 200;
     }
     
     .features .card p {
@@ -191,13 +215,28 @@
         line-height: 2;
     }
 
+    tag {
+        background-color: rgba(49, 86, 145, .5);
+        color: white;
+        border-radius: 30px;
+        margin-right: 10px; /* Add margin to the right of each tag for spacing */
+        margin-bottom: 10px; /* Add margin to the bottom of each tag for vertical spacing */
+        display: inline-block; /* Make tags inline */
+        padding: 5px 10px;
+    }
+
     /* Add media queries for responsiveness */
     @media (max-width: 768px) {
         .container {
-        flex-direction: column;
+            flex-direction: column; /* Change to column layout on small screens */
         }
-        .left-column, .right-column {
-        flex: auto;
-        width: 100%;
+        .left-column {
+            position: static; /* Remove fixed position on small screens */
+            width: 100%; /* Take up the full width on small screens */
+        }
+        .right-column {
+            flex: auto;
+            width: 100%;
+            margin-left: 0; /* Remove margin on small screens */
         }
     }
